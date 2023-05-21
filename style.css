@@ -1,0 +1,49 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.socialMediaIcon:hover {
+
+    fill: #64e666;
+}
+
+.socialMediaIcon {
+    transition-duration: .3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: fill;
+    fill: #f0f0f0;
+    width: 50px;
+    height: 50px;
+}
+
+.codingIcons {
+    fill: #64e666;
+    width: 60px;
+    height: 60px;
+}
+
+body {
+    background: #171616;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    color: rgb(234, 234, 234);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+
+    font-family: 'Roboto', sans-serif;
+}
