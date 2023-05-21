@@ -47,3 +47,7 @@ p {
 
     font-family: 'Roboto', sans-serif;
 }
+
+.resume {
+    display: inline-block;
+}
