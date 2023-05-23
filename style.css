@@ -4,19 +4,26 @@ html {
 }
 
 #splashName {
-    font-size: 60px;
+    font-size: 70px;
+}
+
+#splashText {
+    font-size: 30px;
 }
 
 .socialMediaIcon:hover {
 
     fill: #64e666;
+    width: 40px;
+    height: 40px;
 }
 
 .socialMediaIcon {
-    transition-duration: .3s;
+    /*transition-duration: .2s;
     transition-timing-function: ease;
     transition-delay: 0s;
     transition-property: fill;
+    */
     fill: #f0f0f0;
     width: 50px;
     height: 50px;
@@ -26,6 +33,11 @@ html {
     fill: #64e666;
     width: 60px;
     height: 60px;
+}
+
+.codingIcons:hover {
+    width: 50px;
+    height: 50px;
 }
 
 body {
@@ -47,15 +59,13 @@ p {
     font-size: 20px;
 }
 
-.resume {
-    display: inline-block;
+h4 {
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
-.resumeSVG {
+.buttonText {
     display: inline-block;
-    fill: #f0f0f0;
-    width: 30px;
-    height: 30px;
 }
 
 .arrow {
@@ -63,54 +73,22 @@ p {
     fill: rgb(234, 234, 234);
     width: 20px;
     height: 20px;
+    margin: auto;
 }
 
-#contact {
-    width: 50%;
+.linkButton {
+    border-style: solid;
+    border-color: #EAEAEA;
+    border-radius: 10px;
+    padding: 15px 30px;
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text],
-select,
-textarea[type="text"] {
-    width: 100%;
-    /* Full width */
-    padding: 12px;
-    /* Some padding */
-    border: 1px solid #ccc;
-    /* Gray border */
-    border-radius: 4px;
-    /* Rounded borders */
-    box-sizing: border-box;
-    /* Make sure that padding and width stays in place */
-    margin-top: 6px;
-    /* Add a top margin */
-    margin-bottom: 16px;
-    /* Bottom margin */
-    resize: vertical;
-    /* Allow the user to vertically resize the textarea (not horizontally) */
-    font-family: 'Roboto', sans-serif;
+.linkButton:hover {
+    border-color: #64e666;
 
 }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+.linkButton:hover+.buttonText+.arrow {
+    color: #64e666;
+    fill: #64e666;
 }
