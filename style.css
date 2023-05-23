@@ -47,6 +47,10 @@ p {
     display: inline-block;
 }
 
+#contact {
+    width: 50%;
+}
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text],
 select,
@@ -65,8 +69,10 @@ textarea[type="text"] {
     /* Add a top margin */
     margin-bottom: 16px;
     /* Bottom margin */
-    resize: vertical
-        /* Allow the user to vertically resize the textarea (not horizontally) */
+    resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-family: 'Roboto', sans-serif;
+
 }
 
 /* Style the submit button with a specific background color etc */
