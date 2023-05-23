@@ -3,6 +3,10 @@ html {
     width: 100%;
 }
 
+#splashName {
+    font-size: 60px;
+}
+
 .socialMediaIcon:hover {
 
     fill: #64e666;
@@ -40,10 +44,25 @@ label {
 p {
     color: rgb(234, 234, 234);
     font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
 
 .resume {
     display: inline-block;
+}
+
+.resumeSVG {
+    display: inline-block;
+    fill: #f0f0f0;
+    width: 30px;
+    height: 30px;
+}
+
+.arrow {
+    display: inline;
+    fill: rgb(234, 234, 234);
+    width: 20px;
+    height: 20px;
 }
 
 #contact {
