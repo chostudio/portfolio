@@ -90,18 +90,23 @@ h4 {
     padding: 15px 20px;
 }
 
-.linkButton:hover {
-    border-color: #64e666;
-
-}
-
-.linkButton:hover+.buttonText+.arrow {
+.linkButton:hover>* {
     color: #64e666;
     fill: #64e666;
 }
 
+.linkButton:hover {
+    border-color: #64e666;
+}
+
 a {
     text-decoration: none;
+}
+
+.projectCard {
+    width: 500px;
+    height: 500px;
+    background-color: red;
 }
 
 #authorWebsite {
