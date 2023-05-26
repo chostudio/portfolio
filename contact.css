@@ -1,5 +1,6 @@
 #contact {
     width: 50%;
+
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -10,7 +11,7 @@ textarea[type="text"] {
     /* Full width */
     padding: 12px;
     /* Some padding */
-    border: 1px solid #ccc;
+    border: 1px solid #64e666;
     /* Gray border */
     border-radius: 4px;
     /* Rounded borders */
@@ -39,11 +40,4 @@ input[type=submit] {
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
     background-color: #7df17f;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
 }
