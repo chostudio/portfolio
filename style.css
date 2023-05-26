@@ -3,6 +3,10 @@ html {
     width: 100%;
 }
 
+#splash {
+    height: 600px;
+}
+
 #splashName {
     font-size: 70px;
 }
@@ -19,7 +23,6 @@ html {
     fill: #f0f0f0;
     width: 60px;
     height: 60px;
-
 }
 
 .codingIcons {
