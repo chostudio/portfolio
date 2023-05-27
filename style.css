@@ -29,9 +29,10 @@ html {
     fill: #64e666;
     width: 70px;
     height: 70px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .codingIcons:hover {
