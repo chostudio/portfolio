@@ -9,10 +9,22 @@ html {
 
 #splashName {
     font-size: 70px;
+    text-align: left;
 }
+
 
 #splashText {
     font-size: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#socialLinkResume {
+    padding-left: 30px;
+}
+
+#socialLinkResume a {
+    margin: 5px;
 }
 
 .socialMediaIcon:hover {
@@ -21,8 +33,9 @@ html {
 
 .socialMediaIcon {
     fill: #f0f0f0;
-    width: 60px;
-    height: 60px;
+    width: 52px;
+    height: 52px;
+    margin-bottom: -20px;
 }
 
 .codingIcons {
@@ -40,8 +53,19 @@ html {
     height: 60px;
 }
 
+#githubCodingIcon {
+    width: 60px;
+    height: 60px;
+}
+
+#githubCodingIcon:hover {
+    width: 50px;
+    height: 50px;
+}
+
 body {
     background: #171616;
+
 }
 
 h1,
@@ -55,7 +79,8 @@ label {
 
 h1 {
     font-size: 50px;
-    padding-left: 30px;
+    text-align: center;
+
 }
 
 p {
@@ -108,9 +133,24 @@ a {
 }
 
 .projectCard {
-    width: 500px;
+    width: 400px;
     height: 500px;
     background-color: red;
+}
+
+.projectTitle {
+    font-size: 40px;
+    padding: 20px;
+    margin: auto;
+}
+
+.projectDescription {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.projectLanguages {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #authorWebsite {
