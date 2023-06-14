@@ -8,25 +8,37 @@ var Engine = Matter.Engine,
 // create an engine
 var engine = Engine.create();
 
-// create a renderer
-var render = Render.create({
-    element: document.body,
-    engine: engine
-});
 
-// create two boxes and a ground
-var boxA = Bodies.rectangle(400, 200, 80, 80);
-var boxB = Bodies.rectangle(450, 50, 80, 80);
-var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
+function init() {
+    // create a renderer
+    var render = Render.create({
+        element: document.getElementById("areaToRender"),
+        engine: engine,
+        options: {
+            width: 800,
+            height: 600,
+            pixelRatio: 1,
+            background: '#fafafa',
+            wireframes: false // <-- important
+        }
+    });
 
-// add all of the bodies to the world
-Composite.add(engine.world, [boxA, boxB, ground]);
+    // create two boxes and a ground
+    var boxA = Bodies.rectangle(400, 200, 80, 80);
+    var boxB = Bodies.rectangle(450, 50, 80, 80);
+    var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
 
-// run the renderer
-Render.run(render);
+    // add all of the bodies to the world
+    Composite.add(engine.world, [boxA, boxB, ground]);
 
-// create runner
-var runner = Runner.create();
+    // run the renderer
+    Render.run(render);
 
-// run the engine
-Runner.run(runner, engine);
+    // create runner
+    var runner = Runner.create();
+
+    // run the engine
+    Runner.run(runner, engine);
+}
+
+
