@@ -28,7 +28,7 @@ function init() {
     var boxB = Bodies.rectangle(450, 50, 80, 80);
     var boxC = Bodies.rectangle(100, 100, 80, 80);
     var boxD = Bodies.rectangle(350, 400, 80, 80);
-    var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
+    var ground = Bodies.rectangle(400, 610, 810, 20, { isStatic: true });
 
     // add all of the bodies to the world
     Composite.add(engine.world, [boxA, boxB, boxC, boxD, ground]);
