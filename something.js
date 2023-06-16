@@ -28,10 +28,11 @@ function init() {
     var boxB = Bodies.rectangle(450, 50, 80, 80);
     var boxC = Bodies.rectangle(100, 100, 80, 80);
     var boxD = Bodies.rectangle(350, 400, 80, 80);
+    var boxE = Bodies.rectangle(450, 600, 80, 80);
     var ground = Bodies.rectangle(400, 610, 810, 20, { isStatic: true });
 
     // add all of the bodies to the world
-    Composite.add(engine.world, [boxA, boxB, boxC, boxD, ground]);
+    Composite.add(engine.world, [boxA, boxB, boxC, boxD, boxE, ground]);
 
     // run the renderer
     Render.run(render);
