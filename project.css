@@ -1,20 +1,43 @@
 .projectCard {
-    width: 400px;
-    height: 500px;
+    width: auto;
+    height: auto;
     background-color: red;
+    padding: 1rem;
+    margin: 10px;
 }
 
 .projectTitle {
     font-size: 40px;
-    padding: 20px;
+    padding: 10px;
     margin: auto;
 }
 
 .projectDescription {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.projectLanguages {
-    font-family: 'Courier New', Courier, monospace;
+/* container */
+.responsive-three-column-grid {
+    display: block;
+    justify-items: center;
+}
+
+/* 2 breakpoint */
+/* add horizontal effect on buttons */
+
+@media (min-width:900px) {
+    .responsive-three-column-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:700px) {
+    .responsive-three-column-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
