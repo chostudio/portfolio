@@ -6,9 +6,12 @@
 .projectCard {
     width: auto;
     height: auto;
-    background-color: red;
+    outline: 5px;
+    outline-offset: -5px;
+    outline-style: solid;
+    outline-color: #15F08B;
     padding: 1rem;
-    margin: 10px;
+    margin: 15px;
 }
 
 .projectTitle {
