@@ -1,0 +1,8 @@
+.footerLink:visited {
+    text-decoration: none;
+    color: rgb(234, 234, 234)
+}
+
+.footerLink:hover {
+    color: #15F08B;
+}
