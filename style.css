@@ -8,6 +8,15 @@ html {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+@media (max-width: 800px) {
+
+    #splashBox {
+        width: 100%;
+    }
 }
 
 @keyframes fadeInAnimation {
@@ -172,6 +181,10 @@ a {
 .ninety {
     width: 90%;
     margin: auto;
+}
+
+.ninety>p {
+    text-indent: 2vw;
 }
 
 #about,

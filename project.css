@@ -1,6 +1,13 @@
-#projectsDescription {
+#projectOverview {
     padding-left: 10vw;
     padding-right: 10vw;
+    text-align: center;
+}
+
+.projectGif {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
 }
 
 .projectCard {
@@ -12,6 +19,7 @@
     outline-color: #15F08B;
     padding: 1rem;
     margin: 15px;
+    border-radius: 20px;
 }
 
 .projectTitle {
@@ -23,6 +31,7 @@
 .projectDescription {
     padding-left: 10px;
     padding-right: 10px;
+    margin-top: 0px;
 }
 
 /* container */
