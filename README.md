@@ -2,4 +2,5 @@
 
 Created with HTML, CSS, Javascript
 
-## Click the link to check it out!
+### Click the link to preview it!
+[chrisho.dev](https://www.chrisho.dev)
