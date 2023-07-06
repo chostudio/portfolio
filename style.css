@@ -183,10 +183,6 @@ a {
     margin: auto;
 }
 
-.ninety>p {
-    text-indent: 2vw;
-}
-
 #about,
 #skills {
     flex: 50%;
@@ -198,5 +194,13 @@ a {
     #about,
     #skills {
         flex: 100%;
+    }
+
+    #splashName {
+        font-size: 80px;
+    }
+
+    #splashText {
+        font-size: 25px;
     }
 }
