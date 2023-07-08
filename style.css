@@ -85,6 +85,14 @@ html {
     height: 60px;
 }
 
+@media (max-width: 950px) {
+
+    .codingIcons {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
 #githubCodingIcon {
     width: 60px;
     height: 60px;
