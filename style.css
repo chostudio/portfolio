@@ -1,6 +1,7 @@
 html {
     height: auto;
     width: 100%;
+    overflow-x: hidden;
 }
 
 #splashBox {
@@ -56,7 +57,7 @@ html {
 }
 
 #socialLinkResume a {
-    margin: 5px;
+    margin: 1px;
 }
 
 .socialMediaIcon:hover {
@@ -108,12 +109,14 @@ body {
 
 }
 
+
 h1,
 h2,
 h3,
 h4,
 label {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans',
+        sans-serif;
     color: rgb(234, 234, 234);
 }
 
