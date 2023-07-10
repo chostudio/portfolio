@@ -1,8 +1,24 @@
-.footerLink:visited {
-    text-decoration: none;
-    color: rgb(234, 234, 234)
+hr {
+    color: rgb(234, 234, 234);
+    margin-top: 50px;
 }
 
-.footerLink:hover {
+ul>li {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul>li:hover {
+    color: #15F08B;
+}
+
+a:visited {
+    color: rgb(234, 234, 234);
+}
+
+a:hover {
+    color: #15F08B;
+}
+
+a:active {
     color: #15F08B;
 }

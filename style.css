@@ -2,10 +2,11 @@ html {
     height: auto;
     width: 100%;
     overflow-x: hidden;
+    background: #171616;
 }
 
 #splashBox {
-    width: 50%;
+    width: 60%;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -51,9 +52,14 @@ html {
     color: #15F08B;
 }
 
+/* doesn't work */
+#threadLogo~#threadBox:hover {
+    fill: #15F08B;
+}
 
 #socialLinkResume {
     padding-left: 30px;
+
 }
 
 #socialLinkResume a {
@@ -64,11 +70,17 @@ html {
     fill: #15F08B;
 }
 
+.socialMediaIcon:hover~#threadBox {
+    fill: #15F08B;
+}
+
+
 .socialMediaIcon {
     fill: #f0f0f0;
     width: 52px;
     height: 52px;
-    margin-bottom: -20px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .codingIcons {
@@ -89,8 +101,8 @@ html {
 @media (max-width: 950px) {
 
     .codingIcons {
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 1vw;
+        margin-right: 1vw;
     }
 }
 
@@ -127,12 +139,24 @@ h1 {
     text-decoration-color:
         #15F08B;
     text-underline-offset: 6px;
+    margin-bottom: 30px;
 }
 
 p {
     color: rgb(234, 234, 234);
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
+}
+
+@media (max-width: 500px) {
+
+    p {
+        font-size: 18px;
+    }
+
+    .buttonText {
+        font-size: 22px;
+    }
 }
 
 h4 {
@@ -179,7 +203,7 @@ a {
     text-decoration: none;
 }
 
-#authorWebsite {
+#greenLink {
     text-decoration: underline;
     color: #15F08B;
 }
