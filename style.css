@@ -89,8 +89,8 @@ html {
     fill: #15F08B;
     width: 70px;
     height: 70px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -100,13 +100,6 @@ html {
     height: 60px;
 }
 
-@media (max-width: 950px) {
-
-    .codingIcons {
-        margin-left: 1vw;
-        margin-right: 1vw;
-    }
-}
 
 #githubCodingIcon {
     width: 60px;
@@ -148,6 +141,22 @@ p {
     color: rgb(234, 234, 234);
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
+}
+
+@media (max-width: 950px) {
+
+    .codingIcons {
+        padding-left: 3px;
+        padding-right: 3px;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+
 }
 
 @media (max-width: 500px) {
@@ -192,6 +201,7 @@ h4 {
     border-style: solid;
     border-color: #EAEAEA;
     border-width: 3px;
+    border-radius: 10px;
     padding: 15px 20px;
     margin: 5px;
 }
