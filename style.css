@@ -29,6 +29,7 @@ html {
     100% {
         opacity: 1;
     }
+
 }
 
 #splashName {
@@ -81,6 +82,7 @@ html {
     height: 52px;
     margin-left: 5px;
     margin-right: 5px;
+
 }
 
 .codingIcons {
@@ -151,11 +153,16 @@ p {
 @media (max-width: 500px) {
 
     p {
-        font-size: 18px;
+        font-size: 17px;
+    }
+
+
+    #splashName {
+        font-size: 60px;
     }
 
     .buttonText {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 
@@ -184,7 +191,6 @@ h4 {
 .linkButton {
     border-style: solid;
     border-color: #EAEAEA;
-    border-radius: 10px;
     border-width: 3px;
     padding: 15px 20px;
     margin: 5px;
@@ -229,10 +235,6 @@ a {
     #about,
     #skills {
         flex: 100%;
-    }
-
-    #splashName {
-        font-size: 80px;
     }
 
     #splashText {

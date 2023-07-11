@@ -7,7 +7,10 @@
 .projectGif {
     width: 100%;
     height: auto;
-    border-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .projectCard {
@@ -19,11 +22,15 @@
     outline-color: #15F08B;
     padding: 1rem;
     margin: 15px;
-    border-radius: 20px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
+/*
 .projButtons {}
-
+*/
 .projectTitle {
     font-size: 30px;
     padding: 10px;
