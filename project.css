@@ -28,13 +28,17 @@
     border-bottom-right-radius: 25px;
 }
 
-/*
-.projButtons {}
-*/
 .projectTitle {
     font-size: 30px;
     padding: 10px;
     margin: auto;
+}
+
+@media (max-width: 950px) {
+
+    .projectTitle {
+        font-size: 25px;
+    }
 }
 
 .projectDescription {
