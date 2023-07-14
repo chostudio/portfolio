@@ -4,21 +4,21 @@ ul {
     text-align: center;
 }
 
-ul>li {
+ul>h2 {
     font-family: 'Roboto', sans-serif;
     display: inline-block;
     color: rgb(234, 234, 234);
 }
 
-ul>li:hover {
+ul>h2:hover {
     color: #15F08B;
 }
 
-li>a {
+h2>a {
     color: rgb(234, 234, 234);
 }
 
-li>a:visited {
+h2>a:visited {
     color: rgb(234, 234, 234);
 }
 
