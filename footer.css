@@ -1,21 +1,24 @@
-hr {
-    color: rgb(234, 234, 234);
-    margin-top: 50px;
-}
-
 ul {
-    list-style-type: none
+    list-style-type: none;
+    color: rgb(234, 234, 234);
+    text-align: center;
 }
 
 ul>li {
     font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    color: rgb(234, 234, 234);
 }
 
 ul>li:hover {
     color: #15F08B;
 }
 
-a:visited {
+li>a {
+    color: rgb(234, 234, 234);
+}
+
+li>a:visited {
     color: rgb(234, 234, 234);
 }
 
@@ -50,10 +53,14 @@ a:active {
 }
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 
     .flex-item-right,
     .flex-item-left {
         flex: 100%;
     }
+}
+
+#copyrightText {
+    text-align: center;
 }
