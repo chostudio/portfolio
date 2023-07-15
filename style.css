@@ -1,3 +1,5 @@
+/*color: #15F08B;*/
+
 html {
     height: auto;
     width: 100%;
@@ -21,8 +23,6 @@ html {
     text-align: center;
     text-decoration: none;
     margin: 0;
-    color: #15F08B;
-
 }
 
 @media (max-width: 950px) {
