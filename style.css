@@ -10,8 +10,19 @@ html {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+
+#splashName {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 9vw;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+    color: #15F08B;
+
 }
 
 @media (max-width: 950px) {
@@ -19,6 +30,11 @@ html {
     #splashBox {
         width: 100%;
     }
+
+    #splashName {
+        font-size: 90px;
+    }
+
 }
 
 @keyframes fadeInAnimation {
@@ -32,22 +48,13 @@ html {
 
 }
 
-#splashName {
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 90px;
-    text-align: center;
-    text-decoration: none;
-    margin: 0;
-    color: #15F08B;
-
-}
-
 #splashText {
     text-align: center;
     font-size: 30px;
     padding-left: 30px;
     padding-right: 30px;
+    margin: 0;
+    margin-bottom: 250px;
 }
 
 .down-arrow {
@@ -240,6 +247,9 @@ h4 {
     padding: 10px 15px;
     margin: 5px;
     transition: 0.25s;
+}
+
+.projectCard>.linkButton {
     float: right;
 }
 
