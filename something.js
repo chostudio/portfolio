@@ -12,7 +12,6 @@ var Engine = Matter.Engine,
 var engine = Engine.create(),
     world = engine.world;
 
-
 function init() {
     // create a renderer
     var render = Render.create({
@@ -38,12 +37,6 @@ function init() {
     // run the engine
     Runner.run(runner, engine);
 
-    const colorFill = {
-        render: {
-            fillStyle: '#15F08B'
-        }
-    };
-    // create two boxes and a ground
     // (x pos, y pos, width, height)
     Composite.add(world, [
 
@@ -51,38 +44,47 @@ function init() {
             render: {
                 fillStyle: '#15F08B'
             },
-            restitution: 1
+            restitution: 0.7,
+            chamfer: 20,
+            density: 0.01,
+            angle: 30
+
         }),
         Bodies.rectangle(450, 50, 80, 80, {
             render: {
                 fillStyle: '#15F08B'
             },
-            restitution: 1
+            restitution: 0.7,
+            chamfer: 20,
+            density: 0.01,
+            angle: 300
         }),
+
         Bodies.rectangle(100, 100, 80, 80, {
             render: {
                 fillStyle: '#15F08B'
             },
-            restitution: 1
+            restitution: 0.7,
+            chamfer: 20,
+            density: 0.01,
+            angle: 70
         }),
         Bodies.rectangle(350, 400, 80, 80, {
             render: {
                 fillStyle: '#15F08B'
             },
-            restitution: 1
-        }),
-        Bodies.rectangle(150, -100, 80, 80, {
-            render: {
-                fillStyle: '#15F08B'
-            },
-            restitution: 1
+            restitution: 0.7,
+            chamfer: 20,
+            density: 0.01,
+            angle: 330,
+            density: 0.1
         }),
 
         // walls
-        //Bodies.rectangle(400, 0, 800, 50, { isStatic: true }),
-        //Bodies.rectangle(400, 600, 800, 50, { isStatic: true }),
-        Bodies.rectangle(800, 300, 50, 600, { isStatic: true }),
-        Bodies.rectangle(0, 300, 50, 600, { isStatic: true }),
+        Bodies.rectangle(400, 0, 800, 100, { isStatic: true }),
+        Bodies.rectangle(400, 600, 800, 100, { isStatic: true }),
+        Bodies.rectangle(850, 500, 200, 1000, { isStatic: true }),
+        Bodies.rectangle(-50, 500, 200, 1000, { isStatic: true }),
 
         //ground
         Bodies.rectangle(400, 610, 810, 25, { isStatic: true })
