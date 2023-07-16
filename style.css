@@ -14,6 +14,7 @@ html {
     animation-fill-mode: forwards;
     padding-top: 200px;
     padding-bottom: 50px;
+    pointer-events: none;
 }
 
 #splashName {
@@ -23,6 +24,7 @@ html {
     text-align: center;
     text-decoration: none;
     margin: 0;
+    pointer-events: none;
 }
 
 @media (max-width: 950px) {
@@ -305,4 +307,8 @@ a {
     #splashText {
         font-size: 25px;
     }
+}
+
+::selection {
+    color: #15F08B;
 }
