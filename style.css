@@ -7,13 +7,20 @@ html {
     background: #171616;
 }
 
-#splashBox {
+#splashContainer {
     width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#splashBox {
+    margin-top: -100vh;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     padding-top: 200px;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
     pointer-events: none;
 }
 
@@ -206,11 +213,6 @@ p {
 
     p {
         font-size: 17px;
-    }
-
-
-    #splashName {
-        font-size: 60px;
     }
 
     .buttonText {
