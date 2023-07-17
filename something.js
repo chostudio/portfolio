@@ -8,6 +8,8 @@ var Engine = Matter.Engine,
     Composite = Matter.Composite,
     Bodies = Matter.Bodies;
 
+const matterContainer = document.querySelector("#splashContainer");
+
 // create an engine
 var engine = Engine.create(),
     world = engine.world;
@@ -15,12 +17,11 @@ var engine = Engine.create(),
 function init() {
     // create a renderer
     var render = Render.create({
-        element: document.getElementById("areaToRender"),
+        element: matterContainer,
         engine: engine,
         options: {
-            width: 800,
-            height: 600,
-            pixelRatio: 2,
+            width: matterContainer.clientWidth,
+            height: matterContainer.clientHeight,
             //background
             background: '#171616',
             //solid color fill false or just wireframe outline true boolean
@@ -37,7 +38,45 @@ function init() {
     // run the engine
     Runner.run(runner, engine);
 
+    function handleResize(matterContainer) {
+        //sets canvas size to new value
+        render.canvas.width = matterContainer.clientWidth;
+        render.canvas.height = matterContainer.clientHeight;
+
+
+        //resize ground and top
+        Matter.Body.setPosition(
+            ground,
+            Matter.Vector.create(
+                matterContainer.clientWidth / 2,
+                matterContainer.clientHeight + 40,
+                10000
+            )
+        );
+
+        Matter.Body.setPosition(
+            top,
+            Matter.Vector.create(
+                matterContainer.clientWidth / 2,
+                -50,
+                10000
+            )
+        );
+
+        //also reposition right wall
+        Matter.Body.setPosition(
+            rightWall,
+            Matter.Vector.create(
+                matterContainer.clientWidth + 100,
+                matterContainer.clientHeight / 2
+            )
+        );
+
+    }
+    window.addEventListener("resize", () => handleResize(matterContainer));
+
     // (x pos, y pos, width, height)
+    /*
     Composite.add(world, [
 
         Bodies.rectangle(400, 200, 60, 60, {
@@ -45,19 +84,21 @@ function init() {
                 fillStyle: '#15F08B'
             },
             restitution: 0.7,
-            chamfer: 20,
-            density: 0.01,
-            angle: 30
+            chamfer: 25,
+            angle: 30,
+            density: 0.1,
+            frictionAir: 0.01
 
         }),
-        Bodies.rectangle(450, 50, 80, 80, {
+        Bodies.rectangle(450, matterContainer.clientHeight / 2, 80, 80, {
             render: {
                 fillStyle: '#15F08B'
             },
             restitution: 0.7,
-            chamfer: 20,
-            density: 0.01,
-            angle: 300
+            chamfer: 25,
+            angle: 300,
+            density: 0.1,
+            frictionAir: 0.01
         }),
 
         Bodies.rectangle(100, 100, 80, 80, {
@@ -65,30 +106,71 @@ function init() {
                 fillStyle: '#15F08B'
             },
             restitution: 0.7,
-            chamfer: 20,
-            density: 0.01,
-            angle: 70
+            chamfer: 25,
+            angle: 70,
+            density: 0.1,
+            frictionAir: 0.01
         }),
         Bodies.rectangle(350, 400, 80, 80, {
             render: {
                 fillStyle: '#15F08B'
             },
             restitution: 0.7,
-            chamfer: 20,
-            density: 0.01,
+            chamfer: 25,
             angle: 330,
-            density: 0.1
+            density: 0.1,
+            frictionAir: 0.01
         }),
-
-        // walls
-        Bodies.rectangle(400, 0, 800, 100, { isStatic: true }),
-        Bodies.rectangle(400, 600, 800, 100, { isStatic: true }),
-        Bodies.rectangle(850, 500, 200, 1000, { isStatic: true }),
-        Bodies.rectangle(-50, 500, 200, 1000, { isStatic: true }),
-
-        //ground
-        Bodies.rectangle(400, 610, 810, 25, { isStatic: true })
     ]);
+
+    */
+    //top and bottom walls
+    let top = Bodies.rectangle(matterContainer.clientWidth / 2, -50, matterContainer.clientWidth, 100, {
+        render: {
+            fillStyle: '#171616'
+        },
+        isStatic: true,
+
+    });
+    let ground = Bodies.rectangle(matterContainer.clientWidth / 2, matterContainer.clientHeight + 40, 4000, 100, {
+        render: {
+            fillStyle: '#171616'
+        },
+        isStatic: true
+    });
+
+
+    //side walls
+    let rightWall = Bodies.rectangle(matterContainer.clientWidth + 100, 500, 200, 1000, {
+        render: {
+            fillStyle: '#171616'
+        },
+        isStatic: true
+    });
+
+    let leftWall = Bodies.rectangle(-100, 500, 200, 1000, {
+        render: {
+            fillStyle: '#171616'
+        },
+        isStatic: true
+    });
+
+    Composite.add(world, [leftWall, rightWall, top, ground]);
+
+
+    for (let i = 0; i < 12; i++) {
+        let rect = Bodies.rectangle(matterContainer.clientWidth / 2, 100, 100 + matterContainer.clientWidth / 40 - i * 5, 100 + matterContainer.clientWidth / 40 - i * 5, {
+            render: {
+                fillStyle: '#15F08B'
+            },
+            restitution: 0.7,
+            chamfer: 90,
+            angle: 70 * i,
+            density: 0.1,
+            frictionAir: 0.01
+        });
+        Composite.add(world, [rect]);
+    }
     //gravity = 1 is normal
     engine.gravity.y = 0.5;
 
@@ -105,7 +187,8 @@ function init() {
         });
 
     Composite.add(world, mouseConstraint);
-
+    mouseConstraint.mouse.element.removeEventListener("mousewheel", mouseConstraint.mouse.mousewheel);
+    mouseConstraint.mouse.element.removeEventListener("DOMMouseScroll", mouseConstraint.mouse.mousewheel);
     // keep the mouse in sync with rendering
     render.mouse = mouse;
 }
