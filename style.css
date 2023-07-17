@@ -4,6 +4,7 @@ html {
     height: auto;
     width: 100%;
     overflow-x: hidden;
+    overflow-y: scroll;
     background: #171616;
 }
 
@@ -216,6 +217,10 @@ p {
 
     .buttonText {
         font-size: 20px;
+    }
+
+    #splashName {
+        font-size: 70px;
     }
 }
 
