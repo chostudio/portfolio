@@ -1,7 +1,7 @@
 ul {
     list-style-type: none;
     color: rgb(234, 234, 234);
-    text-align: center;
+    padding: 0;
 }
 
 ul>h2 {
@@ -20,8 +20,11 @@ h2>a:visited {
     color: rgb(234, 234, 234);
 }
 
-a:hover {
+h2>a:hover {
     color: #15F08B;
+    text-decoration: underline;
+    text-decoration-color: #15F08B;
+    text-underline-offset: 6px;
 }
 
 a:active {
