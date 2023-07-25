@@ -190,7 +190,7 @@ function init() {
     mouseConstraint.mouse.element.removeEventListener("mousewheel", mouseConstraint.mouse.mousewheel);
     mouseConstraint.mouse.element.removeEventListener("DOMMouseScroll", mouseConstraint.mouse.mousewheel);
 
-
+    //allows mobile scrolling
     mouseConstraint.mouse.element.removeEventListener('touchstart', mouseConstraint.mouse.mousedown);
     mouseConstraint.mouse.element.removeEventListener('touchmove', mouseConstraint.mouse.mousemove);
     mouseConstraint.mouse.element.removeEventListener('touchend', mouseConstraint.mouse.mouseup);

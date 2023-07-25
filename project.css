@@ -60,7 +60,7 @@
 /* 2 breakpoint */
 /* add horizontal effect on buttons */
 
-@media (max-width:1100px) {
+@media (max-width:1350px) {
     .responsive-three-column-grid {
         display: grid;
         grid-auto-rows: 1fr;
@@ -68,7 +68,7 @@
     }
 }
 
-@media (max-width:750px) {
+@media (max-width:850px) {
     .responsive-three-column-grid {
         display: grid;
         grid-auto-rows: 1fr;
