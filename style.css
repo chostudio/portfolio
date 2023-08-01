@@ -196,7 +196,7 @@ p {
     font-size: 22px;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
 
     .codingIcons {
         padding-left: 3px;
