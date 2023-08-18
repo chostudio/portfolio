@@ -1,4 +1,5 @@
-/*color: #15F08B;*/
+/* (green) #15F08B;*/
+/* (black) #171616; */
 
 html {
     height: auto;
@@ -13,6 +14,7 @@ html {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: hidden;
+    margin-bottom: 100px;
 }
 
 #splashBox {
@@ -20,13 +22,12 @@ html {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    padding-top: 200px;
-    padding-bottom: 150px;
+    padding-top: 150px;
+    padding-bottom: 250px;
     pointer-events: none;
 }
 
 #splashName {
-
     font-size: 9vw;
     text-align: center;
     text-decoration: none;
@@ -63,7 +64,7 @@ html {
     padding-left: 30px;
     padding-right: 30px;
     margin: 0;
-    margin-bottom: 250px;
+    margin-bottom: 150px;
 }
 
 .down-arrow {
@@ -106,6 +107,45 @@ html {
 
 .greenText {
     color: #15F08B;
+}
+
+.button {
+    padding: 10px 16px;
+    border-right: 1px solid #f0f0f0;
+    outline: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    background-color: #f0f0f0;
+    text-align: center;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.leftButton {
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: 4px;
+}
+
+.rightButton {
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 4px;
+}
+
+.button-group {
+    display: inline-flex;
+    overflow: hidden;
+    margin: 15px;
+    float: right;
+}
+
+
+.button:hover {
+    background-color: #15F08B;
 }
 
 #socialLinkResume {
@@ -223,6 +263,10 @@ p {
     #splashName {
         font-size: 50px;
     }
+
+    #splashBox {
+        padding-bottom: 300px;
+    }
 }
 
 h4 {
@@ -241,7 +285,7 @@ h4 {
 
 .arrow {
     display: inline;
-    fill: rgb(234, 234, 234);
+    fill: #171616;
     width: 20px;
     height: 20px;
     margin-bottom: -3px;
@@ -314,8 +358,4 @@ a {
     #splashText {
         font-size: 25px;
     }
-}
-
-::selection {
-    color: #15F08B;
 }
