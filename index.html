@@ -13,6 +13,10 @@ https://www.linkedin.com/in/chris-ho-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chris Ho</title>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"
+        integrity="sha512-3CP+e7z5ieYYTIyvRvV3eGVYR67yXg5V2mWfg8pEJJd2mlh8tG/cnDv5scTmRztEYHTksBlpPOmxFOiMtHfZdQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="project.css">
     <link rel="stylesheet" href="footer.css">
@@ -29,14 +33,9 @@ https://www.linkedin.com/in/chris-ho-
     <link rel="manifest" href="/site.webmanifest">
     <meta name="msapplication-TileColor" content="#0c2419">
     <meta name="theme-color" content="#0c2419">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"
-        integrity="sha512-3CP+e7z5ieYYTIyvRvV3eGVYR67yXg5V2mWfg8pEJJd2mlh8tG/cnDv5scTmRztEYHTksBlpPOmxFOiMtHfZdQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body onload='init()'>
-
     <section id="splashContainer">
     </section>
     <section id="splashBox">
@@ -45,143 +44,7 @@ https://www.linkedin.com/in/chris-ho-
             </h1>
             <p id="splashText">Full-Stack & iOS Developer</p>
             <div class="down-arrow"></div>
-
         </section>
-    </section>
-    <section id="projects">
-        <h1>Projects</h1>
-    
-        <p id="projectOverview">A showcase featuring some of my favorite works. Each project includes a link to a Github
-            repository with more information about the project.</p>
-        <!-- project cards grid-->
-        <section class="responsive-three-column-grid">
-    
-            <!-- Crescent -->
-            <article class="projectCard">
-                <!-- change img src to real gif-->
-                <img class="projectGif" src="crescent.png" alt="gif preview">
-                <h2 class="projectTitle">Crescent</h2>
-                <p class="projectDescription">Website for a luxury moon hotel.
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
-                <div class="button-group">
-                    <a target="_blank" href="https://github.com/chostudio/Crescent">
-                        <button class="button leftButton">GitHub
-                            <svg style="display: inline; margin-bottom: -3px;" xmlns="http://www.w3.org/2000/svg"
-                                width="20px" height="20px" viewBox="0 0 24 24">
-                                <path
-                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z" />
-                            </svg>
-    
-                        </button>
-                    </a>
-                    <a target="_blank" href="https://chostudio.github.io/Crescent/">
-                        <button class="button rightButton">Demo
-                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                <path
-                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
-                            </svg>
-                        </button>
-                    </a>
-                </div>
-    
-            </article>
-    
-    
-            <!-- Slingshot -->
-            <article class="projectCard">
-                <!-- change img src to real gif-->
-                <video class="projectGif" autoplay muted loop>
-                    <source src="slingshot.mov" type="video/mp4">
-                </video>
-                <h2 class="projectTitle">Slingshot</h2>
-                <p class="projectDescription">2D mobile game made with Unity. &emsp;&emsp;&emsp;&emsp;&emsp;</p>
-                <div class="button-group">
-                    <a target="_blank" href="https://chostudio.github.io/slingshot">
-                        <button class="button leftButton">GitHub
-                            <svg style="display: inline; margin-bottom: -3px;" xmlns="http://www.w3.org/2000/svg"
-                                width="20px" height="20px" viewBox="0 0 24 24">
-                                <path
-                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z" />
-                            </svg>
-    
-                        </button>
-                    </a>
-                    <a target="_blank" href="https://chostudio.itch.io/slingshot">
-                        <button class="button rightButton">Demo
-                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                <path
-                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
-                            </svg>
-                        </button>
-                    </a>
-                </div>
-            </article>
-    
-            <!-- Patent Searcher -->
-    
-            <article class="projectCard">
-                <!-- change img src to real gif-->
-                <img class="projectGif" src="patentSearcherImage.png" alt="Patent Searcher Image">
-                <h2 class="projectTitle">Patent Searcher</h2>
-                <p class="projectDescription">Desktop GUI that uses the U.S. Patent Office API.
-                    &emsp;&emsp;&emsp;&emsp;&emsp;</p>
-                <div class="button-group">
-                    <a target="_blank" href="https://github.com/chostudio/patentSearcherGUI">
-                        <button class="button leftButton">GitHub
-                            <svg style="display: inline; margin-bottom: -3px;" xmlns="http://www.w3.org/2000/svg"
-                                width="20px" height="20px" viewBox="0 0 24 24">
-                                <path
-                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z" />
-                            </svg>
-    
-                        </button>
-                    </a>
-                    <a target="_blank" href="https://github.com/chostudio/patentSearcherGUI#demo">
-                        <button class="button rightButton">Demo
-                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                <path
-                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
-                            </svg>
-                        </button>
-                    </a>
-                </div>
-            </article>
-    
-            <!-- Portfolio -->
-            <article class="projectCard">
-                <!-- change img src to real gif-->
-                <img class="projectGif" src="portfolioScreenshot.png" alt="gif preview">
-                <h2 class="projectTitle">Portfolio</h2>
-                <p class="projectDescription">My portfolio website. There's a possibility you're on it right
-                    now.
-                </p>
-                <div class="button-group">
-                    <a target="_blank" href="https://github.com/chostudio/portfolio">
-                        <button class="button leftButton">GitHub
-                            <svg style="display: inline; margin-bottom: -3px;" xmlns="http://www.w3.org/2000/svg"
-                                width="20px" height="20px" viewBox="0 0 24 24">
-                                <path
-                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z" />
-                            </svg>
-    
-                        </button>
-                    </a>
-                    <a target="_blank" href="https://chrisho.dev">
-                        <button class="button rightButton">Demo
-                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                <path
-                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
-                            </svg>
-                        </button>
-                    </a>
-                </div>
-            </article>
-        </section>
-        </a>
     </section>
     <section id="aboutAndSkills">
         <section id="about">
@@ -200,10 +63,10 @@ https://www.linkedin.com/in/chris-ho-
                     I have a hearing aid. I won a
                     national trivia
                     competition. I used to
-                    play Fortnite competitively and placed 29th in a regional tournament.
+                    play Fortnite competitively.
                 </p>
 
-                <a target="_blank" href="#contact">
+                <a href="#contact">
                     <button style="border-radius: 10px;" class="button">Contact
                         <svg class="arrow" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -372,38 +235,182 @@ https://www.linkedin.com/in/chris-ho-
             </table>
         </section>
     </section>
+    <section id="projects">
+        <h1>Projects</h1>
 
-    
+        <p id="projectOverview">A showcase featuring some of my favorite works. Each project includes a link to a Github
+            repository with more information about the project.</p>
+        <!-- project cards grid-->
+        <section class="responsive-three-column-grid">
+
+            <!-- Crescent -->
+            <article class="projectCard">
+                <!-- change img src to real gif-->
+                <img class="projectGif" src="crescent.png" alt="gif preview">
+                <h2 class="projectTitle">Crescent</h2>
+                <p class="projectDescription">Website for a luxury moon hotel.
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+                <div class="button-group">
+                    <a target="_blank" href="https://github.com/chostudio/Crescent">
+                        <button class="button leftButton">GitHub
+                            <svg style="display: inline; margin-bottom: -3px;" xmlns="http://www.w3.org/2000/svg"
+                                width="20px" height="20px" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z" />
+                            </svg>
+
+                        </button>
+                    </a>
+                    <a target="_blank" href="https://chostudio.github.io/Crescent/">
+                        <button class="button rightButton">Demo
+                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+
+            </article>
+
+
+            <!-- Slingshot -->
+            <article class="projectCard">
+                <!-- change img src to real gif-->
+                <video class="projectGif" autoplay muted loop>
+                    <source src="slingshot.mov" type="video/mp4">
+                </video>
+                <h2 class="projectTitle">Slingshot</h2>
+                <p class="projectDescription">2D mobile game made with Unity. &emsp;&emsp;&emsp;&emsp;&emsp;</p>
+                <div class="button-group">
+                    <a target="_blank" href="https://chostudio.github.io/slingshot">
+                        <button class="button leftButton">GitHub
+                            <svg style="display: inline; margin-bottom: -3px;" xmlns="http://www.w3.org/2000/svg"
+                                width="20px" height="20px" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z" />
+                            </svg>
+
+                        </button>
+                    </a>
+                    <a target="_blank" href="https://chostudio.itch.io/slingshot">
+                        <button class="button rightButton">Demo
+                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Patent Searcher -->
+
+            <article class="projectCard">
+                <!-- change img src to real gif-->
+                <img class="projectGif" src="patentSearcherImage.png" alt="Patent Searcher Image">
+                <h2 class="projectTitle">Patent Searcher</h2>
+                <p class="projectDescription">Desktop GUI that uses the U.S. Patent Office API.
+                    &emsp;&emsp;&emsp;&emsp;&emsp;</p>
+                <div class="button-group">
+                    <a target="_blank" href="https://github.com/chostudio/patentSearcherGUI">
+                        <button class="button leftButton">GitHub
+                            <svg style="display: inline; margin-bottom: -3px;" xmlns="http://www.w3.org/2000/svg"
+                                width="20px" height="20px" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z" />
+                            </svg>
+
+                        </button>
+                    </a>
+                    <a target="_blank" href="https://github.com/chostudio/patentSearcherGUI#demo">
+                        <button class="button rightButton">Demo
+                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Portfolio -->
+            <article class="projectCard">
+                <!-- change img src to real gif-->
+                <img class="projectGif" src="portfolioScreenshot.png" alt="gif preview">
+                <h2 class="projectTitle">Portfolio</h2>
+                <p class="projectDescription">My portfolio website. There's a possibility you're on it right
+                    now.
+                </p>
+                <div class="button-group">
+                    <a target="_blank" href="https://github.com/chostudio/portfolio">
+                        <button class="button leftButton">GitHub
+                            <svg style="display: inline; margin-bottom: -3px;" xmlns="http://www.w3.org/2000/svg"
+                                width="20px" height="20px" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z" />
+                            </svg>
+
+                        </button>
+                    </a>
+                    <a target="_blank" href="https://chrisho.dev">
+                        <button class="button rightButton">Demo
+                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+            </article>
+        </section>
+        </a>
+    </section>
     <!-- <section id="experience">
         <h1>Experience</h1> -->
-        <!-- side card scrolling -->
+    <!-- side card scrolling -->
 
     <!-- </section> -->
-
 </body>
 <script src="something.js"></script>
-<section id="Contact">
+<section id="contact">
     <h1>Contact</h1>
-</section>
-<footer>
-    <div class="flex-container">
-        <div class="flex-item-left">
-            <ul>
-                <h2><a target="_blank" href="/blog.html">Resume</a></h2>
-                
-                <h2><a target="_blank" href="https://github.com/chostudio">GitHub</a> </h2>
-                <h2><a target="_blank" href="https://www.linkedin.com/in/chris-ho-">LinkedIn</a></h2>
-                <h2><a target="_blank" href="/blog.html">Blog</a></h2>
-
-            </ul>
-
+    <div class="row">
+        <div class="col">
+            <div class="rounded-rectangle">
+                <h1>Email</h1>
+            </div>
         </div>
-        <div class="flex-item-right">
-
-
-
+        <div class="col">
+            <a target="_blank" href="https://www.linkedin.com/in/chris-ho-">
+                <div class="rounded-rectangle">
+                    <h1>Linkedin</h1>
+                </div>
+            </a>
         </div>
     </div>
+    <div class="row">
+        <div class="col">
+            <a target="_blank" href="https://github.com/chostudio">
+                <div class="rounded-rectangle">
+                    <h1>Resume</h1>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a target="_blank" href="https://github.com/chostudio">
+                <div class="rounded-rectangle">
+                    <h1>GitHub</h1>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<footer>
     <p id="copyrightText">Copyright © 2023. Coded by Chris Ho.</p>
 </footer>
 
