@@ -7,6 +7,7 @@ html {
     overflow-x: hidden;
     overflow-y: scroll;
     background: #171616;
+    scroll-behavior: smooth;
 }
 
 #splashContainer {
@@ -224,8 +225,7 @@ h1 {
     font-size: 50px;
     text-align: center;
     text-decoration: underline;
-    text-decoration-color:
-        #15F08B;
+    text-decoration-color: #15F08B;
     text-underline-offset: 6px;
     margin-bottom: 30px;
 }
@@ -347,11 +347,43 @@ a {
     margin-left: 15px;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 50%;
+    padding-bottom: 20px;
+}
+
+.rounded-rectangle {
+    width: calc(100% - 50px);
+    box-sizing: border-box;
+    height: 150px;
+    border-radius: 15px;
+    background: linear-gradient(#56f3aa, #0bac61);
+
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.rounded-rectangle:hover {
+    background: linear-gradient(#77efb7, #15da7e);
+}
+
+#copyrightText {
+    font-size: 15px;
+    text-align: center;
+}
+
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media (max-width: 800px) {
 
     #about,
-    #skills {
+    #skills,
+    .col {
         flex: 100%;
     }
 
