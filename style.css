@@ -173,7 +173,6 @@ html {
     height: 52px;
     margin-left: 5px;
     margin-right: 5px;
-    transition: 0.25s;
     margin-bottom: 20px;
 }
 
@@ -354,7 +353,7 @@ a {
 
 .col {
     flex: 50%;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .rounded-rectangle {
@@ -362,16 +361,31 @@ a {
     box-sizing: border-box;
     height: 150px;
     border-radius: 15px;
-    background: linear-gradient(#56f3aa, #0bac61);
+    outline: 5px;
+    outline-offset: -5px;
+    outline-style: solid;
+    outline-color: #15F08B;
 
     margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 .rounded-rectangle:hover {
-    background: linear-gradient(#77efb7, #15da7e);
+    outline: 10px;
+    outline-offset: -5px;
+    outline-style: solid;
+    outline-color: #15F08B;
 }
+
+a>div>h1 {
+    text-decoration:none;
+}
+.rounded-rectangle:hover>* {
+    text-decoration: underline;
+    text-decoration-color: #15F08B;
+}
+
 
 #copyrightText {
     font-size: 15px;
@@ -385,6 +399,10 @@ a {
     #skills,
     .col {
         flex: 100%;
+    }
+
+    .col {
+        padding-bottom: 20px;
     }
 
     #splashText {
