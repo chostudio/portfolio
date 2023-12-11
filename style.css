@@ -352,14 +352,14 @@ a {
 }
 
 .col {
-    flex: 50%;
-    padding-bottom: 40px;
+    flex: 25%;
+    padding-bottom: 20px;
 }
 
 .rounded-rectangle {
-    width: calc(100% - 50px);
+    width: calc(100% - 30px);
     box-sizing: border-box;
-    height: 150px;
+    height: 100px;
     border-radius: 15px;
     outline: 5px;
     outline-offset: -5px;
@@ -376,6 +376,10 @@ a {
     outline-offset: -5px;
     outline-style: solid;
     outline-color: #15F08B;
+}
+
+.contactLink{
+    font-size: 30px;
 }
 
 a>div>h1 {
@@ -408,4 +412,8 @@ a>div>h1 {
     #splashText {
         font-size: 25px;
     }
+}
+
+footer{
+    margin-top: 100px;
 }
