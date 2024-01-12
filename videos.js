@@ -4,10 +4,8 @@ function handleVideoAutoplay() {
   const screenWidth = window.innerWidth;
 
   videos.forEach(video => {
-    if (screenWidth < 800) {
-      video.removeAttribute('autoplay'); // Remove autoplay attribute for widths below 800px
-    } else {
-      video.setAttribute('autoplay', true); // Set autoplay attribute for other cases
+    if (screenWidth > 1000) {
+      video.setAttribute('autoplay', true);
     }
   });
 }
