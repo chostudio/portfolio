@@ -6,6 +6,10 @@ function handleVideoAutoplay() {
   videos.forEach(video => {
     if (screenWidth > 1000) {
       video.setAttribute('autoplay', true);
+      video.setAttribute('loop', true);
+    }
+    else {
+      video.setAttribute('controls', true);
     }
   });
 }
@@ -15,3 +19,5 @@ document.addEventListener('DOMContentLoaded', () => {
   handleVideoAutoplay(); // Check on page load
   addResizeListener(); // Add listener for resize events
 });
+
+window.onresize = handleVideoAutoplay();

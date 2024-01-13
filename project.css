@@ -20,6 +20,7 @@
     padding: 1rem;
     margin: 15px;
     border-radius: 25px;
+    min-width: 200px;
 }
 
 .projectTitle {
