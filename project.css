@@ -21,6 +21,9 @@
     margin: 15px;
     border-radius: 25px;
     min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .projectTitle {
@@ -41,6 +44,7 @@
     padding-right: 10px;
     margin-top: 0px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 
