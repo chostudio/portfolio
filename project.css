@@ -30,6 +30,7 @@
     font-size: 30px;
     padding: 10px;
     margin: auto;
+    text-align: center;
 }
 
 @media (max-width: 950px) {
