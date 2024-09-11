@@ -15,7 +15,7 @@ html {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: hidden;
-    margin-bottom: 100px;
+    margin-bottom: 10vh;
 }
 
 #splashBox {
@@ -23,8 +23,8 @@ html {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    padding-top: 150px;
-    padding-bottom: 250px;
+    padding-top: 22vh;
+    padding-bottom: 30vh;
     pointer-events: none;
 }
 
@@ -192,6 +192,17 @@ html {
     height: 60px;
 }
 
+#typescriptIcon{
+    width: 60px;
+    height: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#typescriptIcon:hover {
+    width: 50px;
+    height: 50px;
+}
 
 #githubCodingIcon {
     width: 60px;
