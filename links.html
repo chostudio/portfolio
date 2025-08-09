@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Ho - Resources</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resources.css">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#0c2419">
+    <meta name="theme-color" content="#0c2419">
+</head>
+
+<body>
+    <h1>ChrisHo.dev</h1> <!-- if click on my name then go back to home -->
+    <!-- github icon, instagram icon, linkedin icon -->
+    <h1>Links</h1>
+    <p>A curated list of coding, tech, and career resources, updated frequently.</p>
+
+    <div class="resource-container"></div>
+    <a href="https://example.com/resource1" class="resource-box">
+        <div class="resource-image">
+            <img src="image1.jpg" alt="Resource 1">
+        </div>
+        <div class="resource-text">
+            <h2>Resource 1</h2>
+            <p>Description of Resource 1</p>
+        </div>
+    </a>
+    <a href="https://app.codecrafters.io/join?via=chrisho.dev" class="resource-box">
+        <div class="resource-image">
+            <img src="https://app.codecrafters.io/assets/7408d202b2bb110054fc.svg" alt="chrisho.dev codecrafters">
+        </div>
+        <div class="resource-text">
+            <h2>Resource 2</h2>
+            <p>Description of Resource 2</p>
+        </div>
+    </a>
+
+    <a href="https://app.codecrafters.io/join?via=chrisho.dev" class="resource-box">
+        <div class="resource-image">
+            <img src="https://app.codecrafters.io/assets/7408d202b2bb110054fc.svg" alt="chrisho.dev codecrafters">
+        </div>
+        <div class="resource-text">
+            <h2>Resource 2</h2>
+            <p>Description of Resource 2</p>
+        </div>
+    </a>
+
+    <a href="https://collegeappassist.com" class="resource-box">
+        <div class="resource-image">
+            <img src="https://app.codecrafters.io/assets/7408d202b2bb110054fc.svg" alt="chrisho.dev codecrafters">
+        </div>
+        <div class="resource-text">
+            <h2>CollegeAppAssist.com</h2>
+            <p>AI Chrome extension autofiller for college applications and scholarships.</p>
+        </div>
+    </a>
+
+    <a href="https://collegeappassist.com" class="resource-box">
+        <div class="resource-image">
+            <img src="https://app.codecrafters.io/assets/7408d202b2bb110054fc.svg" alt="chrisho.dev codecrafters">
+        </div>
+        <div class="resource-text">
+            <h2>ArctexSoftware.com</h2>
+            <p>Software Develoment company.</p>
+        </div>
+    </a>
+
+    </div>
+
+    <style>
+        .resource-container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .resource-box {
+            display: flex;
+            border: 6px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s;
+            margin: 20px;
+        }
+        @media (max-width: 1000px) {
+            .resource-box:hover {
+            transform: scale(1.20);
+            }
+        .resource-box {
+            margin-left: 30px;
+            margin-right: 30px;
+            }
+        }
+        .resource-box:hover {
+            transform: scale(1.02);
+        }
+
+        .resource-image img {
+            width: 150px;
+            height: auto;
+            border-right: 1px solid #ccc;
+        }
+
+        .resource-text {
+            padding: 10px;
+        }
+    </style>
+
+</body>
+
+</html>
