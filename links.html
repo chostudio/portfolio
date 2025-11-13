@@ -2,121 +2,209 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chris Ho - Resources</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="resources.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chris Ho - Links</title>
+  <meta name="theme-color" content="#0c2419">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#0c2419">
-    <meta name="theme-color" content="#0c2419">
+  <style>
+    /* ---------- Base Styles ---------- */
+    body {
+      background-color: #0b1712;
+      color: #e6f2e6;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* ---------- Header Section ---------- */
+    header {
+      width: 100%;
+      max-width: 600px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      color: #76ffb3;
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    .home-btn {
+      position: absolute;
+      left: 0;
+      background-color: #113d2a;
+      color: #76ffb3;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .home-btn:hover {
+      background-color: #1a593d;
+      transform: scale(1.05);
+    }
+
+    /* ---------- Page Description ---------- */
+    p.description {
+      text-align: center;
+      color: #a5b9a5;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      padding: 0 10px;
+    }
+
+    /* ---------- Link Boxes ---------- */
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .link-box {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background-color: #0c1611;
+      border: 1px solid #225436;
+      border-radius: 15px;
+      padding: 15px 20px;
+      width: 100%;
+      box-sizing: border-box;
+      text-decoration: none;
+      color: #e6f2e6;
+      transition: all 0.25s ease;
+    }
+
+    .link-box:hover {
+      background-color: #1c3a28;
+      transform: scale(1.03);
+      box-shadow: 0 0 12px #1f6d48;
+    }
+
+    .link-box img {
+      width: 45px;
+      height: 45px;
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+
+    .link-text {
+      text-align: left;
+    }
+
+    .link-text h2 {
+      margin: 0;
+      font-size: 1rem;
+      color: #76ffb3;
+    }
+
+    .link-text p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: #a5b9a5;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.8rem;
+      color: #446a55;
+    }
+
+    /* ---------- Mobile Friendly Adjustments ---------- */
+    @media (max-width: 600px) {
+      body {
+        padding: 16px;
+      }
+
+      .link-box {
+        padding: 12px 16px;
+        gap: 12px;
+      }
+
+      .link-box img {
+        width: 40px;
+        height: 40px;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .home-btn {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <h1>ChrisHo.dev</h1> <!-- if click on my name then go back to home -->
-    <!-- github icon, instagram icon, linkedin icon -->
-    <h1>Links</h1>
-    <p>A curated list of coding, tech, and career resources, updated frequently.</p>
+  <header>
+    <a href="/" class="home-btn">← Home</a>
+   <a href="/"> <h1>ChrisHo.dev</h1></a>
+  </header>
 
-    <div class="resource-container"></div>
-    <a href="https://example.com/resource1" class="resource-box">
-        <div class="resource-image">
-            <img src="image1.jpg" alt="Resource 1">
-        </div>
-        <div class="resource-text">
-            <h2>Resource 1</h2>
-            <p>Description of Resource 1</p>
-        </div>
-    </a>
-    <a href="https://app.codecrafters.io/join?via=chrisho.dev" class="resource-box">
-        <div class="resource-image">
-            <img src="https://app.codecrafters.io/assets/7408d202b2bb110054fc.svg" alt="chrisho.dev codecrafters">
-        </div>
-        <div class="resource-text">
-            <h2>Resource 2</h2>
-            <p>Description of Resource 2</p>
-        </div>
+  <p class="description">A curated list of coding, tech, and career resources.</p>
+
+  <div class="links-container">
+    <a href="https://app.codecrafters.io/join?via=chrisho.dev" class="link-box">
+      <img src="https://app.codecrafters.io/assets/7408d202b2bb110054fc.svg" alt="Codecrafters">
+      <div class="link-text">
+        <h2>Codecrafters</h2>
+        <p>Build your own Git, Docker, or Redis — from scratch.</p>
+      </div>
     </a>
 
-    <a href="https://app.codecrafters.io/join?via=chrisho.dev" class="resource-box">
-        <div class="resource-image">
-            <img src="https://app.codecrafters.io/assets/7408d202b2bb110054fc.svg" alt="chrisho.dev codecrafters">
-        </div>
-        <div class="resource-text">
-            <h2>Resource 2</h2>
-            <p>Description of Resource 2</p>
-        </div>
+    <a href="https://collegeappassist.com" class="link-box">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/College_icon.svg/1024px-College_icon.svg.png" alt="CollegeAppAssist">
+      <div class="link-text">
+        <h2>CollegeAppAssist.com</h2>
+        <p>AI autofiller for college applications and scholarships.</p>
+      </div>
     </a>
 
-    <a href="https://collegeappassist.com" class="resource-box">
-        <div class="resource-image">
-            <img src="https://app.codecrafters.io/assets/7408d202b2bb110054fc.svg" alt="chrisho.dev codecrafters">
-        </div>
-        <div class="resource-text">
-            <h2>CollegeAppAssist.com</h2>
-            <p>AI Chrome extension autofiller for college applications and scholarships.</p>
-        </div>
+    <a href="https://arctexsoftware.com" class="link-box">
+      <img src="https://img.icons8.com/color/96/000000/source-code.png" alt="Arctex Software">
+      <div class="link-text">
+        <h2>ArctexSoftware.com</h2>
+        <p>Software development and automation tools.</p>
+      </div>
     </a>
 
-    <a href="https://collegeappassist.com" class="resource-box">
-        <div class="resource-image">
-            <img src="https://app.codecrafters.io/assets/7408d202b2bb110054fc.svg" alt="chrisho.dev codecrafters">
-        </div>
-        <div class="resource-text">
-            <h2>ArctexSoftware.com</h2>
-            <p>Software Develoment company.</p>
-        </div>
+    <a href="https://github.com/chostudio" class="link-box">
+      <img src="github-mark-white.png" alt="GitHub">
+      <div class="link-text">
+        <h2>GitHub</h2>
+        <p>Check out my GitHub!</p>
+      </div>
     </a>
 
-    </div>
+    <a href="https://www.linkedin.com/in/chris-ho-" class="link-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+      <div class="link-text">
+        <h2>LinkedIn</h2>
+        <p>Connect with me!</p>
+      </div>
+    </a>
+  </div>
 
-    <style>
-        .resource-container {
-            display: flex;
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .resource-box {
-            display: flex;
-            border: 6px solid #ccc;
-            border-radius: 10px;
-            overflow: hidden;
-            text-decoration: none;
-            color: inherit;
-            transition: transform 0.2s;
-            margin: 20px;
-        }
-        @media (max-width: 1000px) {
-            .resource-box:hover {
-            transform: scale(1.20);
-            }
-        .resource-box {
-            margin-left: 30px;
-            margin-right: 30px;
-            }
-        }
-        .resource-box:hover {
-            transform: scale(1.02);
-        }
-
-        .resource-image img {
-            width: 150px;
-            height: auto;
-            border-right: 1px solid #ccc;
-        }
-
-        .resource-text {
-            padding: 10px;
-        }
-    </style>
-
+  <footer>© 2025 ChrisHo.dev</footer>
 </body>
 
 </html>
