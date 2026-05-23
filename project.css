@@ -79,3 +79,23 @@
         width: 90%;
     }
 }
+
+.projectTech {
+    font-size: 16px;
+    color: #15F08B;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+
+@media (max-width: 1000px) {
+    .projectTech {
+        font-size: 14px;
+    }
+}
