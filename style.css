@@ -417,20 +417,22 @@ a {
 
     /* Style matching .button */
     background-color: #2a2a2a;
-    border: 1px solid #444;
+    border: 3px solid #333;
     transition-duration: 0.2s;
     cursor: pointer;
 }
 
 .rounded-rectangle:hover {
-    background-color: #15F08B;
+    background-color: #2a2a2a;
     border-color: #15F08B;
+    box-shadow: 0 0 15px rgba(21, 240, 139, 0.5), inset 0 0 10px rgba(21, 240, 139, 0.2);
 }
 
 .contactLink {
     font-size: 30px;
     margin: 0;
     color: #f0f0f0;
+    transition: color 0.2s;
 }
 
 a>div>h1 {
@@ -438,7 +440,7 @@ a>div>h1 {
 }
 .rounded-rectangle:hover>* {
     text-decoration: none;
-    color: #171616;
+    color: #15F08B;
 }
 
 
