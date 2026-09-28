@@ -144,15 +144,6 @@ html {
     background-color: #15F08B;
 }
 
-#socialLinkResume {
-    padding-left: 30px;
-
-}
-
-#socialLinkResume a {
-    margin: 1px;
-}
-
 .socialMediaIcon:hover {
     fill: #15F08B;
 }
