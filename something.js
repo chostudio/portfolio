@@ -158,25 +158,56 @@ function init() {
     Composite.add(world, [leftWall, rightWall, top, ground]);
 
 
-    //one box per letter of the domain
-    const letters = "chrisho.dev".split("");
+    //one box per letter of the domain, laid out left to right so the row
+    //reads ChrisHo.dev once everything settles
+    const letters = "ChrisHo.dev".split("");
+    const slot = matterContainer.clientWidth / letters.length;
+    //leave a gap in each slot so neighbours don't shove each other out of order
+    const boxSize = Math.max(26, Math.min(120, slot * 0.74));
+
+    //canvas silently falls back to a system font if the webfont isn't ready yet,
+    //so ask for it up front and let the render loop pick it up when it lands
+    if (document.fonts && document.fonts.load) {
+        document.fonts.load("700 " + Math.round(boxSize) + "px 'Open Sans'");
+    }
+
+    //jitter, so the row is clearly in order without looking mechanical
+    function jitter(amount) {
+        return (Math.random() * 2 - 1) * amount;
+    }
 
     for (let i = 0; i < letters.length; i++) {
-        let size = 100 + matterContainer.clientWidth / 40 - i * 5;
-        let rect = Bodies.rectangle(matterContainer.clientWidth / 2, 100, size, size, {
-            render: {
-                fillStyle: '#15F08B'
-            },
-            restitution: 0.7,
-            chamfer: 90,
-            angle: 70 * i,
-            density: 0.1,
-            frictionAir: 0.01
-        });
+        let size = boxSize * (1 + jitter(0.06));
+        let rect = Bodies.rectangle(
+            slot * (i + 0.5) + jitter(slot * 0.12),
+            //below the static top wall, or they jam against it instead of falling
+            size / 2 + 20 + Math.random() * 90,
+            size,
+            size,
+            {
+                render: {
+                    fillStyle: '#15F08B'
+                },
+                restitution: 0.25,
+                //rounded corners, scaled so small mobile boxes round the same amount
+                chamfer: Math.round(size * 0.42),
+                angle: jitter(0.25),
+                density: 0.1,
+                frictionAir: 0.015
+            }
+        );
+        //heavy rotational inertia: boxes tilt a little but never flip onto their
+        //side, so the letters stay readable even when packed tight on mobile
+        Matter.Body.setInertia(rect, rect.inertia * 25);
+
         //picked up by the afterRender hook below
         rect.letter = letters[i];
         rect.letterSize = size;
-        Composite.add(world, [rect]);
+
+        //drop them in reading order
+        setTimeout(function () {
+            Composite.add(world, [rect]);
+        }, i * 110 + Math.random() * 60);
     }
 
     //draw each box's letter on top of it, turning with the box
@@ -197,13 +228,15 @@ function init() {
             ctx.save();
             ctx.translate(body.position.x, body.position.y);
             ctx.rotate(body.angle);
-            ctx.font = '700 ' + Math.round(body.letterSize * 0.5) + "px 'Open Sans', sans-serif";
+            //same family and weight as the splash title
+            ctx.font = '700 ' + Math.round(body.letterSize * 0.52) + "px 'Open Sans', sans-serif";
             ctx.fillText(body.letter, 0, 0);
             ctx.restore();
         }
 
         ctx.restore();
     });
+
     //gravity = 1 is normal
     engine.gravity.y = 0.5;
 
