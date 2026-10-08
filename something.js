@@ -158,8 +158,12 @@ function init() {
     Composite.add(world, [leftWall, rightWall, top, ground]);
 
 
-    for (let i = 0; i < 12; i++) {
-        let rect = Bodies.rectangle(matterContainer.clientWidth / 2, 100, 100 + matterContainer.clientWidth / 40 - i * 5, 100 + matterContainer.clientWidth / 40 - i * 5, {
+    //one box per letter of the domain
+    const letters = "chrisho.dev".split("");
+
+    for (let i = 0; i < letters.length; i++) {
+        let size = 100 + matterContainer.clientWidth / 40 - i * 5;
+        let rect = Bodies.rectangle(matterContainer.clientWidth / 2, 100, size, size, {
             render: {
                 fillStyle: '#15F08B'
             },
@@ -169,8 +173,37 @@ function init() {
             density: 0.1,
             frictionAir: 0.01
         });
+        //picked up by the afterRender hook below
+        rect.letter = letters[i];
+        rect.letterSize = size;
         Composite.add(world, [rect]);
     }
+
+    //draw each box's letter on top of it, turning with the box
+    Matter.Events.on(render, 'afterRender', function () {
+        const ctx = render.context;
+        const bodies = Composite.allBodies(world);
+
+        ctx.save();
+        ctx.fillStyle = '#171616';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+
+        for (let i = 0; i < bodies.length; i++) {
+            let body = bodies[i];
+            if (!body.letter) {
+                continue;
+            }
+            ctx.save();
+            ctx.translate(body.position.x, body.position.y);
+            ctx.rotate(body.angle);
+            ctx.font = '700 ' + Math.round(body.letterSize * 0.5) + "px 'Open Sans', sans-serif";
+            ctx.fillText(body.letter, 0, 0);
+            ctx.restore();
+        }
+
+        ctx.restore();
+    });
     //gravity = 1 is normal
     engine.gravity.y = 0.5;
 
